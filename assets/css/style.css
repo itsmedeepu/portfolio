@@ -1,0 +1,449 @@
+/**============Author:Deepak S,Date-:27-11-2021,@copyright 2021 Deepak s========**/
+
+/**Root style for making work done simple**/
+
+:root {
+  --background-color: #333647;
+  --full-color: #f87652;
+  --secondary-color: #bbbbbb;
+  --third-color: #4ded30;
+}
+/**import font faces form external **/
+@font-face {
+  font-family: Deepak;
+  src: url(../fonts/font1.ttf);
+}
+@font-face {
+  font-family: Deepak1;
+  src: url(../fonts/font2.ttf);
+}
+body {
+  background-color: var(--background-color) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+td,
+a {
+  cursor: pointer;
+}
+/**particle js styling**/
+canvas.particles-js-canvas-el {
+  position: absolute;
+  height: 100% !important;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1000;
+  margin: 0px;
+}
+
+/***Navabr styling**/
+.nav_section .navbar-brand {
+  font-size: 30px;
+  font-family: Deepak;
+  font-weight: bold;
+  color: var(--third-color) !important;
+}
+.nav_section .navbar-brand:hover {
+  color: var(--third-color);
+}
+/**style for navbrand items**/
+.nav_section .navbar-brand span {
+  color: var(--full-color);
+}
+/**margin for li items*/
+.nav_section .navbar-nav li {
+  margin: 0px 8px;
+}
+/**style for list anchor tag items**/
+.nav_section .navbar-nav li a {
+  color: white !important;
+  font-size: 20px;
+}
+.nav_section .navbar-nav .nav-link::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  bottom: 7px;
+  transition: 0.5s;
+  color: var(--full-color);
+}
+
+.nav_section .navbar-nav .nav-link:hover::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 7px;
+}
+
+.nav_section .navbar-brand button i {
+  border-radius: 50%;
+}
+
+.hero-section .row {
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+
+.hero-section .row h1,
+h2,
+h3,
+p {
+  color: white;
+}
+.hero-section .row h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.hero-section .row h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.hero-section .row h2 {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 8px 0px;
+}
+.hero-section .row p {
+  font-size: 22px;
+  font-family: Deepak1;
+  line-height: 21px;
+  color: var(--secondary-color);
+}
+.hero-section .row button {
+  border-radius: 30px;
+  font-size: 19px;
+  color: white;
+  background-color: #4ded30;
+  margin-bottom: 3px;
+}
+.hero-section .row button:hover {
+  animation: swing;
+  animation-duration: 2s;
+}
+
+.hero-section .row img {
+  width: 300px;
+  height: 300px;
+}
+
+.hero-section .row img:hover {
+  animation: jello;
+  animation-duration: 4s;
+  cursor: pointer;
+}
+/**About section styling goes here**/
+
+hr {
+  border: 2px solid var(--third-color);
+}
+.about .row h2 {
+  color: white);
+}
+
+/*about me */
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+top: 0;
+bottom: 0;
+position: absolute;
+content: " ";
+width: 3px;
+background-color: #eeeeee;
+left: 50%;
+margin-left: -1.5px;
+}
+
+.timeline > li {
+margin-bottom: 20px;
+position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+content: " ";
+display: table;
+}
+
+.timeline > li:after {
+clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+content: " ";
+display: table;
+}
+
+.timeline > li:after {
+clear: both;
+}
+
+.timeline > li > .timeline-panel {
+width: 46%;
+float: left;
+border: 1px solid #d4d4d4;
+border-radius: 2px;
+padding: 20px;
+position: relative;
+-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li > .timeline-panel:before {
+position: absolute;
+top: 26px;
+right: -15px;
+display: inline-block;
+border-top: 15px solid transparent;
+border-left: 15px solid #ccc;
+border-right: 0 solid #ccc;
+border-bottom: 15px solid transparent;
+content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+position: absolute;
+top: 27px;
+right: -14px;
+display: inline-block;
+border-top: 14px solid transparent;
+border-left: 14px solid #fff;
+border-right: 0 solid #fff;
+border-bottom: 14px solid transparent;
+content: " ";
+}
+
+.timeline > li > .timeline-badge {
+color: #fff;
+width: 50px;
+height: 50px;
+line-height: 50px;
+font-size: 1.4em;
+text-align: center;
+position: absolute;
+top: 16px;
+left: 50%;
+margin-left: -25px;
+background-color: #999999;
+z-index: 100;
+border-top-right-radius: 50%;
+border-top-left-radius: 50%;
+border-bottom-right-radius: 50%;
+border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+border-left-width: 0;
+border-right-width: 15px;
+left: -15px;
+right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+border-left-width: 0;
+border-right-width: 14px;
+left: -14px;
+right: auto;
+}
+
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+margin-top: 5px;
+
+}
+
+.about h4{
+
+  color: white;
+  text-decoration: underline;
+}
+
+
+/**MY PROJECTS**/
+
+.slick-class img{
+    width: 150px;
+    height: 100px;
+}
+
+.table tr td a{
+
+  color: white;
+}
+
+/*BACK TO TOP*/
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+ul.timeline:before {
+  left: 40px;
+}
+
+  ul.timeline > li > .timeline-panel {
+      width: calc(100% - 90px);
+      width: -moz-calc(100% - 90px);
+      width: -webkit-calc(100% - 90px);
+  }
+
+  ul.timeline > li > .timeline-badge {
+      left: 15px;
+      margin-left: 0;
+      top: 16px;ss
+  }
+
+  ul.timeline > li > .timeline-panel {
+      float: right;
+  }
+
+      ul.timeline > li > .timeline-panel:before {
+          border-left-width: 0;
+          border-right-width: 15px;
+          left: -15px;
+          right: auto;
+      }
+
+      ul.timeline > li > .timeline-panel:after {
+          border-left-width: 0;
+          border-right-width: 14px;
+          left: -14px;
+          right: auto;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) and (min-width: 993px) {
+  .hero-section .row h1 {
+    font-size: 58px;
+  }
+}
+@media (max-width: 993px) and (min-width: 763px) {
+  .hero-section .row h1 {
+    font-size: 42px;
+  }
+  .hero-section .row h2 {
+    font-size: 15px;
+  }
+  .hero-section .row p {
+    font-size: 11px;
+  }
+  .hero-section .row h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 763px) and (min-width: 500px) {
+  .hero-section {
+    font-size: 55px 0px;
+  }
+  .hero-section .row h1 {
+    font-size: 42px;
+  }
+  .hero-section .row h2 {
+    font-size: 15px;
+  }
+  .hero-section .row p {
+    font-size: 11px;
+  }
+  .hero-section .row h3 {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  .hero-section .row button {
+    margin-bottom: 10px;
+  }
+
+  .hero-section .row img {
+    width: 200px;
+    height: 200px;
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 200px) {
+  .hero-section .row img {
+    width: 200px;
+    height: 200px;
+  }
+  .hero-section .row h1 {
+    font-size: 14px;
+  }
+  .hero-section .row h2 {
+    font-size: 15px;
+  }
+  .hero-section .row p {
+    font-size: 14px;
+  }
+  .hero-section .row h3 {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .hero-section .row button {
+    margin-bottom: 10px;
+  }
+}
+
