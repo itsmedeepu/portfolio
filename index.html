@@ -3,17 +3,22 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--COPYRIGHT AUTHO: DEEPAK S Date-:27-11-2021 ====================== C-->
+<!--Copying of source is strictly prohibited  ====================== C-->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio</title>
+    <title>Deepak-Portfolio</title>
+    <!--Favicon for logo -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <meta name="description" content="MY PORTFOLIO" />
     <!--META TAG FOR SEO OPTIMIZATION -->
     <meta name="keywords" content="Deepak Portfolio" />
     <meta name="author" content="DEEPAK S" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--Bootstrap styling link goes here-->
+    <!---NOTE--ALL LIBRARYS USED IN THIS CONTENT ARE VISIBLE IN OFFLINE -->
+    <!--Bootstrap version 5 styling link goes here-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <!--external css goes here-->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -80,7 +85,8 @@
         </nav>
       </div>
     </div>
-
+<!--COPYRIGHT AUTHOR: DEEPAK S Date-:27-11-2021 ====================== C-->
+<!--Copying of source is strictly prohibited  ====================== C-->
     <!--HERO SECTIONS-->
     <div class="hero-section shadow">
       <div class="container">
@@ -150,7 +156,7 @@
                 <div class="timeline-body">
                   <p>
                     I have completed my intermediate between the year of
-                    2016-2018. From Amara Jyothi Pu college mulbagal-563132 With
+                    2016-2018.With
                     the percentage of 79.5%.
                   </p>
                 </div>
@@ -167,7 +173,7 @@
                 <div class="timeline-body">
                   <p>
                     Coming to my Schooling i have completed my schooling form
-                    Amara jyothi high school mulbagal. With the percentage of
+                    Amara jyothi high school  With the percentage of
                     84.80% during the year 2015-2016
                   </p>
                 </div>
@@ -212,7 +218,8 @@
       </div>
     </div>
     <!----About section ENDS  here-->
-
+<!--COPYRIGHT AUTHOR: DEEPAK S Date-:27-11-2021 ====================== C-->
+<!--Copying of source is strictly prohibited  ====================== C-->
     <!--SKILL SECTION GOES HERE-->
     <div class="container mt-3" id="skills">
       <div class="row">
@@ -293,11 +300,11 @@
     <div class="container mt-3 shadow" id="projects">
       <div class="row">
         <h2 class="text-center"><u>MY PROJECTS</u></h2>
-        <div class="col-lg-12 col-md-12 col-sm-8 col-xm-12 table-responsive">
+        <div class="col-lg-12 col-md-12 col-sm-8 col-xm-12 table-responsive mt-3">
           <table
             class="table table-bordered text-white text-center table-active"
           >
-            <tr>
+            <tr class="heads">
               <td>S.NO</td>
               <td>Project Name</td>
               <td>Technologies used</td>
@@ -335,11 +342,27 @@
                 >
               </td>
             </tr>
+            <tr>
+              <td>4</td>
+              <td>To-do</td>
+              <td>HTML,CSS,BOOTSTRAP,Jquery,Ajax,MYSQL,PHP</td>
+              <td>
+                <a href="http://deepak.42web.io/todo/" target="_blank"
+                  >Click Here</a
+                >
+              </td>
+            </tr>
           </table>
         </div>
       </div>
     </div>
     <!--PROJECT SECTION ENDS HERE-->
+<!--BACK TO TOP-->
+    <div id="back-to-top">
+      <img src="assets/images/bck.png" width="60px" title="Back to top" />
+  </div>
+  <!--BACK TO Top ENDS-->
+
 
     <!--FOOTER SECTION-->
     <!-- Footer -->
@@ -366,11 +389,7 @@
             ><i class="fab fa-github"></i
           ></a>
         </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Form -->
         <section class="">
-          <!--Grid row-->
           <div class="row"></div>
           </div>
         </section>
@@ -388,10 +407,7 @@
     <!-- Footer -->
 
     <!--BACK TO TOP-->
-    <div id="back-to-top">
-      <img src="assets/images/bck.png" width="60px" title="Back to top" />
-  </div>
-
+ 
 
     <div id="particles-js"></div>
 
@@ -410,6 +426,7 @@
 
     <!--CALLING SLICK PLUIGN-->
     <script src="assets/plugins/slick/slick.min.js"></script>
+    <!--PARTICLE JS Intialization -->
     <script>
       particlesJS.load(
         "particles-js",
@@ -419,14 +436,21 @@
         }
       );
     </script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".slick-class").slick({
-          dots: true,
-          autoplay: true,
-          autoplaySpeed: 1000,
-        });
-      });
+    <!--SCROOL TO TOP-->
+    <script>
+      $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#back-to-top').fadeIn(); 
+        } else { 
+            $('#back-to-top').fadeOut(); 
+        } 
+    }); 
+    $('#back-to-top').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 300); 
+        return false; 
+    }); 
+});
     </script>
   </body>
 </html>

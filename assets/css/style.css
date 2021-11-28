@@ -324,6 +324,13 @@ margin-top: 5px;
   color: white;
 }
 
+.table .heads td{
+  color: var(--third-color);
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+
 /*BACK TO TOP*/
 #back-to-top {
   position: fixed;
@@ -445,5 +452,12 @@ ul.timeline:before {
   .hero-section .row button {
     margin-bottom: 10px;
   }
+  .table .heads td{
+    color: var(--third-color);
+    font-weight: bolder;
+    font-size: 15px;
+  
+  }
+  
 }
 
