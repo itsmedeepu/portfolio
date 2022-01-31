@@ -398,7 +398,7 @@
 
       <!-- Copyright DEEPAK S-->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright:
+        © <span id="copyright"></span> Copyright:
         <a class="text-white">Designed and maintained by Deepak s</a>
       </div>
       <!-- Copyright -->
@@ -451,6 +451,13 @@
         return false; 
     }); 
 });
+
+//auto update year
+
+document.getElementById('copyright').innerText=new Date().getFullYear();
+
+
+
     </script>
   </body>
 </html>
