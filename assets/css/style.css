@@ -107,6 +107,10 @@ canvas.particles-js-canvas-el {
 .nav_section .navbar-brand button i {
   border-radius: 50%;
 }
+.nav_section .navbar-brand button:hover{
+
+  outline: none;
+}
 
 .hero-section .row {
   display: flex;
@@ -394,9 +398,12 @@ ul.timeline:before {
 
 
 
+/*****align counter*****/
+/* .counter{
+  float: left;
+}
 
-
-
+ */
 
 
 
