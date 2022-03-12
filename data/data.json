@@ -1,0 +1,27 @@
+[
+	{
+		"projectno": 1,
+		"projectname": "Covid-19 Dashboard",
+		"technologies_used": "HTML,CSS,BOOTSTRAP,JAVASCRIPT,API",
+        "projectlink":"https://itsmedeepu.github.io/covid19/"
+	},
+	{
+		"projectno": 2,
+		"projectname": "Covid-19 Dashboard React",
+		"technologies_used": "React js,Api,Javascript,Bootstrap",
+        "projectlink":"https://itsmedeepu.github.io/covid19react/"
+	},
+	{
+		"projectno": 3,
+		"projectname": "STUDENT MANAGEMENT SYSTEM",
+		"technologies_used": "HTML,CSS,BOOTSTRAP,Jquery,Ajax,MYSQL,PHP",
+        "projectlink":"http://deepak.42web.io/sms/"
+	},
+	{
+		"projectno": 4,
+		"projectname": "To-do",
+        "technologies_used": "HTML,CSS,BOOTSTRAP,Jquery,Ajax,MYSQL,PHP",
+        "projectlink":"https://deepak.42web.io/todo"
+	}
+
+]
