@@ -21,7 +21,5 @@
 		"projectno": 4,
 		"projectname": "To-do",
         "technologies_used": "HTML,CSS,BOOTSTRAP,Jquery,Ajax,MYSQL,PHP",
-        "projectlink":"https://deepak.42web.io/todo"
+        "projectlink":"http://deepak.42web.io/todo/"
 	}
-
-]
